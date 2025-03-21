@@ -1,0 +1,7 @@
+[package]
+name = "hello-world"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gpui.workspace = true
