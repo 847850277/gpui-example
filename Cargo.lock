@@ -3113,6 +3113,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "on-window-close-quit"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+]
+
+[[package]]
 name = "once_cell"
 version = "1.21.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3151,6 +3159,14 @@ dependencies = [
  "zbus_macros",
  "zeroize",
  "zvariant",
+]
+
+[[package]]
+name = "opacity"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
 ]
 
 [[package]]

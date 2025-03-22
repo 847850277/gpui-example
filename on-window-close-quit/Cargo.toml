@@ -1,0 +1,8 @@
+[package]
+name = "on-window-close-quit"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gpui = { workspace = true }
+anyhow = { workspace = true }

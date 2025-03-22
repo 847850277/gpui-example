@@ -12,6 +12,8 @@ members = [
     "gradient",
     "image-loading",
     "input",
+    "on-window-close-quit",
+    "opacity",
 ]
 resolver = "2"
 
@@ -25,5 +27,7 @@ gif-viewer = { path = "gif-viewer" }
 gradient = { path = "gradient" }
 image-loading = { path = "image-loading" }
 input = { path = "input" }
+on-window-close-quit = { path = "on-window-close-quit" }
+opacity = { path = "opacity" }
 rand = "0.9.0"
 image = "0.24.7"
