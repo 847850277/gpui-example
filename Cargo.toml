@@ -16,6 +16,15 @@ members = [
     "opacity",
     "ownership-post",
     "painting",
+    "pattern",
+    "set-menus",
+    "shadow",
+    "text-layout",
+    "text-wrapper",
+    "uniform-list",
+    "window",
+    "window-positioning",
+    "window-shadow"
 ]
 resolver = "2"
 
@@ -33,5 +42,14 @@ on-window-close-quit = { path = "on-window-close-quit" }
 opacity = { path = "opacity" }
 ownership-post = { path = "ownership-post" }
 painting = { path = "painting" }
+pattern = { path = "pattern" }
+set-menus = { path = "set-menus" }
+shadow = { path = "shadow" }
+text-layout = { path = "text-layout" }
+text-wrapper = { path = "text-wrapper" }
+uniform-list = { path = "uniform-list" }
+window = { path = "window" }
+window-positioning = { path = "window-positioning" }
+window-shadow = { path = "window-shadow" }
 rand = "0.9.0"
 image = "0.24.7"

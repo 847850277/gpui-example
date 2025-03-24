@@ -3285,6 +3285,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "pattern"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+ "rand 0.9.0",
+]
+
+[[package]]
 name = "pbkdf2"
 version = "0.12.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4042,6 +4051,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "set-menus"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+]
+
+[[package]]
 name = "sha1_smol"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4056,6 +4073,15 @@ dependencies = [
  "cfg-if",
  "cpufeatures",
  "digest",
+]
+
+[[package]]
+name = "shadow"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+ "smallvec",
 ]
 
 [[package]]
@@ -4450,6 +4476,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "text-layout"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+]
+
+[[package]]
+name = "text-wrapper"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+]
+
+[[package]]
 name = "thiserror"
 version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4746,6 +4788,15 @@ name = "unicode-xid"
 version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
+
+[[package]]
+name = "uniform-list"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+ "rand 0.9.0",
+]
 
 [[package]]
 name = "url"
@@ -5146,6 +5197,32 @@ name = "winapi-x86_64-pc-windows-gnu"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
+
+[[package]]
+name = "window"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+]
+
+[[package]]
+name = "window-positioning"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+ "rand 0.9.0",
+]
+
+[[package]]
+name = "window-shadow"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "gpui",
+ "smallvec",
+]
 
 [[package]]
 name = "windows"
