@@ -1,0 +1,9 @@
+[package]
+name = "db-mysql"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gpui = { workspace = true }
+anyhow = { workspace = true }
+mysql = { workspace = true }

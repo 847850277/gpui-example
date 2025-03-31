@@ -24,7 +24,9 @@ members = [
     "uniform-list",
     "window",
     "window-positioning",
-    "window-shadow"
+    "window-shadow",
+    "db-mysql",
+    "form-input-db"
 ]
 resolver = "2"
 
@@ -51,5 +53,8 @@ uniform-list = { path = "uniform-list" }
 window = { path = "window" }
 window-positioning = { path = "window-positioning" }
 window-shadow = { path = "window-shadow" }
+db-mysql = { path = "db-mysql" }
+form-input-db = { path = "form-input-db" }
+mysql = "24.0.0"
 rand = "0.9.0"
 image = "0.24.7"

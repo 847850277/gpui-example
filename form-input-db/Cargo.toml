@@ -1,0 +1,11 @@
+[package]
+name = "form-input-db"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+gpui = { workspace = true }
+anyhow = { workspace = true }
+mysql = { workspace = true }
+unicode-segmentation = "1.10"
