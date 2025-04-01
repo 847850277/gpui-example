@@ -1,10 +1,85 @@
+use std::fmt::format;
+
 use gpui::{
-    div, prelude::*, px, rgb, size, App, Application, Bounds, Context, SharedString, Window,
-    WindowBounds, WindowOptions,
+    div, prelude::*, px, rgb, size, App, Application, Bounds, Context, SharedString, TextAlign, Window, WindowBounds, WindowOptions
 };
 
+#[derive(Debug)]
+#[allow(dead_code)]
 struct HelloWorld {
     text: SharedString,
+}
+
+pub struct DbPannel {}
+
+impl Render for DbPannel {
+    fn render(&mut self, _window: &mut Window, _cx: &mut Context<'_, Self>) -> impl IntoElement {
+        div()
+        .bg(rgb(0xffffff))
+        .size(px(800.0))
+        //.text_color(rgb(0x0000ff))
+        .child(
+            div().h_2()
+            .text_align(TextAlign::Center)
+            .text_size(px(30.0))
+            .child("Database Connection".to_string())
+            )
+            
+        .child(
+            div()
+            .child(
+                div()
+                .text_align(TextAlign::Left)
+                .text_size(px(20.0))
+                .child("System".to_string())
+                )
+        )
+        .child(
+            div()
+            .child(
+                div()
+                .text_align(TextAlign::Left)
+                .text_size(px(20.0))
+                .child("Server".to_string())
+                )
+        )
+        .child(
+            div()
+            .child(
+                div()
+                .text_align(TextAlign::Left)
+                .text_size(px(20.0))
+                .child("Username".to_string())
+                )
+        )
+        .child(
+            div()
+            .child(
+                div()
+                .text_align(TextAlign::Left)
+                .text_size(px(20.0))
+                .child("Password".to_string())
+                )
+        )
+        .child(
+            div()
+            .child(
+                div()
+                .text_align(TextAlign::Left)
+                .text_size(px(20.0))
+                .child("Database".to_string())
+                )
+        )
+        .child(
+            div()
+            .child(
+                div()
+                .text_align(TextAlign::Center)
+                .text_size(px(20.0))
+                .child("Login".to_string())
+                )
+        )
+    }
 }
 
 impl Render for HelloWorld {
@@ -14,7 +89,7 @@ impl Render for HelloWorld {
             .flex_col()
             .gap_3()
             .bg(rgb(0x505050))
-            .size(px(500.0))
+            .size(px(800.0))
             .justify_center()
             .items_center()
             .shadow_lg()
@@ -23,37 +98,22 @@ impl Render for HelloWorld {
             .text_xl()
             .text_color(rgb(0xffffff))
             .child(format!("Hello, {}!", &self.text))
-            .child(
-                div()
-                    .flex()
-                    .gap_2()
-                    .child(div().size_8().bg(gpui::red()))
-                    .child(div().size_8().bg(gpui::green()))
-                    .child(div().size_8().bg(gpui::blue()))
-                    .child(div().size_8().bg(gpui::yellow()))
-                    .child(div().size_8().bg(gpui::black()))
-                    .child(div().size_8().bg(gpui::white())),
-            )
-    }
-}
-
-pub struct InputForm {}
-
-impl Render for InputForm {
-    fn render(&mut self, window: &mut Window, cx: &mut Context<'_, Self>) -> impl IntoElement {
-        div()
     }
 }
 
 fn main() {
     Application::new().run(|cx: &mut App| {
-        let bounds = Bounds::centered(None, size(px(1080.), px(900.0)), cx);
+        let bounds = Bounds::centered(None, size(px(800.0), px(600.0)), cx);
         cx.open_window(
             WindowOptions {
                 window_bounds: Some(WindowBounds::Windowed(bounds)),
                 ..Default::default()
             },
-            |_, cx| cx.new(|_| InputForm {}),
+            |_, cx| {
+                cx.new(|_| DbPannel {
+                    //text: "World".into(),
+                })
+            },
         )
         .unwrap();
     });
