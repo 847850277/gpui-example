@@ -5,7 +5,8 @@ edition = "2021"
 publish = false
 
 [dependencies]
-gpui = { workspace = true }
+gpui = { git = "https://github.com/huacnlee/zed.git", branch = "webview" }
+gpui-component = { git = "https://github.com/longbridge/gpui-component.git" }
 anyhow = { workspace = true }
 mysql = { workspace = true }
 unicode-segmentation = "1.10"

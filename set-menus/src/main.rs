@@ -1,5 +1,6 @@
 use gpui::{
-    actions, div, prelude::*, px, rgb, size, App, Application, Bounds, Context, Menu, MenuItem, Window, WindowBounds, WindowOptions
+    actions, div, prelude::*, px, rgb, size, App, Application, Bounds, Context, Menu, MenuItem,
+    Window, WindowBounds, WindowOptions,
 };
 
 struct SetMenus;
